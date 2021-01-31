@@ -1,0 +1,77 @@
+<div class="mike">
+    <img src="../assets/mike.png" alt="">
+</div>
+<mat-toolbar color="primary" class="header">
+    <span (click)="back()" class="material-icons">arrow_back</span>
+    <span>Account login</span>
+</mat-toolbar>
+<div class="row m-0 w-100">
+    <div class="container-fluid">
+        <div class="row m-0 w-100">
+            <form [formGroup]="loginform">
+            <div class="col-12">
+                <div class="row mt-4">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1">
+                                <span class="material-icons">
+                                    phone_iphone
+                                </span>
+
+                            </div>
+                            <div class="col-11">
+                                <input type="text" placeholder="Mobile Number" formControlName="mobile">
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="row mt-1">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1 ">
+                                <div class="icon">
+                                    <span class="material-icons">
+                                        vpn_key
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-11 ">
+                                <input type="password" placeholder="Password" formControlName="password">
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="row mt-1 mb-3">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1 ">
+                                <div class="icon">
+                                    <span class="material-icons">
+                                        gpp_good
+                                        </span>
+                                </div>
+                            </div>
+                            <div class="col-11 ">
+                                    <p (click)="fileInput.click()" class="attech">Attach</p>
+                                    <input #fileInput type="file"  formControlName="attach" (change)="onFileInput($event)" style="display:none;" />
+                               
+                                <!-- <input type="file" id="hide" placeholder="attach"> -->
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row m-0 w-100">
+    <button mat-raised-button color="primary" (click)="login()" class="login">Login</button>
+</div>
+<div class="row m-0 w-100">
+    <div class="col-12 text-center mt-2">
+        <button mat-raised-button routerLink="/registration">Register</button>
+        <button mat-raised-button routerLink="/forget-password"  class="registration">Forget Password?</button>
+    </div>
+</div>

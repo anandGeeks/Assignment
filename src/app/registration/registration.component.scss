@@ -1,0 +1,31 @@
+mat-toolbar{
+    .material-icons{
+        padding: 8px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .material-icons:active{
+        padding: 8px;
+        background: grey;
+        border-radius: 20px;
+        margin-right: 5px;
+    }
+}
+mat-card{
+    padding: 4px 15px 3px 15px;
+    .input{
+        .col-1{
+            width: 35px;
+        }
+        .material-icons{
+            margin-top: 5px;
+        }
+    }
+}
+.register{
+    width: 200px;
+    margin: auto;
+}
+.otp{
+    margin-top: 6px;
+}

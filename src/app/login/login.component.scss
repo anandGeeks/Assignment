@@ -1,0 +1,68 @@
+mat-toolbar{
+    .material-icons{
+        padding: 8px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .material-icons:active{
+        padding: 8px;
+        background: grey;
+        border-radius: 20px;
+        margin-right: 5px;
+    }
+}
+mat-card{
+    padding: 4px 15px 3px 15px;
+    .input{
+        .col-1{
+            width: 35px;
+        }
+        .material-icons{
+            margin-top: 5px;
+        }
+    }
+}
+.login{
+    width: 200px;
+    margin: auto;
+   
+}
+.registration{
+    margin-left: 10px;
+    
+}
+.mike{
+    position: fixed;
+    z-index: 10;
+    bottom: 100px;
+    right: 75px;
+    border: 1px solid white;
+    border-radius: 156px;
+    width: 143px;
+  
+    img{
+      
+    border-radius: 72px;
+    }
+}
+#hide input[type=file] {
+    display:none;
+    margin:10px;
+    }
+    #hide input[type=file] + label {
+    display:inline-block;
+    margin:20px;
+    padding: 4px 32px;
+    background-color: #FFFFFF;
+    border:solid 1px #666F77;
+    border-radius: 6px;
+    color:#666F77;
+    }
+    #hide input[type=file]:active + label {
+    background-image: none;
+    background-color:#2D6C7A;
+    color:#FFFFFF;
+    }
+.attech{
+    margin: 8px 0 12px;
+}
