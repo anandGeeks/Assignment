@@ -1,0 +1,108 @@
+<mat-toolbar color="primary" class="header">
+    <span (click)="back()" class="material-icons">arrow_back</span>
+    <span>Register</span>
+</mat-toolbar>
+
+<div class="row m-0 w-100">
+    <div class="container-fluid">
+        <div class="row m-0 w-100">
+            <form [formGroup]="registerform">
+            <div class="col-12">
+                <div class="row mt-4">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1">
+                                <span class="material-icons">
+                                    aod
+                                    </span>
+                            </div>
+                            <div class="col-11">
+                                <input type="text" placeholder="Recommendation Code">
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="row mt-1">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1">
+                                <span class="material-icons">
+                                    phone_iphone
+                                </span>
+
+                            </div>
+                            <div class="col-11">
+                                <input type="text" placeholder="Mobile Number">
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-8">
+                        <div class="row mt-1 ">
+                            <mat-card>
+                                <div class="row input">
+                                    <div class="col-1 ">
+                                        <div class="icon">
+                                            <span class="material-icons">
+                                                textsms
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-11 ">
+                                        <input type="password" placeholder="Verification Code">
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <button mat-raised-button class="otp" (click)="otp()">{{buttonName}}
+                            <span *ngIf="buttonName!='OTP'">S</span>
+                        </button>
+                        
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1 ">
+                                <div class="icon">
+                                    <span class="material-icons">
+                                        vpn_key
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-11 ">
+                                <input type="password" placeholder="Login Password">
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="row mt-1 mb-3">
+                    <mat-card>
+                        <div class="row input">
+                            <div class="col-1 ">
+                                <div class="icon">
+                                    <span class="material-icons">
+                                        vpn_key
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-11 ">
+                                <input type="password" placeholder="Security Password">
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row m-0 w-100 mb-3">
+<mat-checkbox class="example-margin">I agree PRIVACY POLICY</mat-checkbox>
+</div>
+<div class="row m-0 w-100">
+    <button mat-raised-button color="primary" (click)="register()" class="register">Register</button>
+</div>
